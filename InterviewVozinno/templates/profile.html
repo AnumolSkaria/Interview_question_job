@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+name:{{ usr.User_name }}
+    Password:{{ usr.Password }}
+    Age:{{ usr.Age }}
+{#    {{ usr.id }}#}
+    <a href="{%url 'update' usr.id%}">Update</a>
+    <a href=" {% url 'delete' usr.id %}">Delete</a>
+</form>
+</body>
+</html>
